@@ -1,0 +1,678 @@
+/* Define custom properties for site colors using a pseudo class root */
+:root {
+    --site-color-01-hover: #9e2f6e; 
+    --site-color-01: #c13584;     
+}
+
+/* Base font size for easier rem calculations */
+html {
+    font-size: 62.5%; 
+}
+
+/* Global body styles */
+body {
+    background-color: #1d1d1d; 
+    color: #fff; /* Ensure text is white for contrast */
+    margin: 0;
+}
+
+/* Background image overlay */
+body:after {
+    content: url(/assets/images/Github.png) url(/assets/images/linkedin.png) url(/assets/images/discord.png); 
+    height: 0; 
+    overflow: hidden;
+    position: absolute; 
+    width: 0; 
+    z-index: -1; 
+}
+
+.wrapper-main {
+    margin: 0 auto; 
+    width: 1100px; 
+}
+
+h1 {
+    color: #fff; 
+    font-family: Roboto; 
+    font-size: 2.6rem; 
+    font-weight: 600;
+    line-height: 1.5rem; 
+    text-transform: uppercase; 
+}
+
+h2 {
+    color: #fff; 
+    font-family: Roboto; 
+    font-size: 2.8rem; 
+    font-weight: 600; 
+    line-height: 1.5rem; 
+    text-transform: uppercase; 
+}
+
+h3 {
+    color: #fff; 
+    font-family: Roboto; 
+    font-size: 2.6rem; 
+    font-weight: 600; 
+    line-height: 1.5rem; 
+    text-transform: uppercase; 
+}
+
+/* Paragraph and link styles */
+p {
+    color: #fff; 
+    font-family: Roboto; 
+    font-size: 1.4rem; 
+    line-height: 1.75; 
+}
+
+a {
+    color: #fff; 
+    cursor: pointer; 
+    font-family: Roboto;
+    font-size: 1.4rem; 
+    line-height: 1.75;
+    transition: color 0.3s ease; /* Smooth color transition */
+}
+
+/* Header main container */
+.header-main {
+    background-color: #b1b1b1d0; 
+    display: flex; 
+    height: 60px;
+    justify-content: space-between; 
+    position: fixed; 
+    top: 0; 
+    width: 100%; 
+    z-index: 1000;        
+}
+
+/* Header logo container */
+.header-main-logo {
+    display: flex; 
+    height: 100%;
+    padding-left: 60px; 
+    width: fit-content; 
+}
+
+.header-main-logo img {
+    align-self: center; 
+    height: 90px; 
+    margin-top: 15px; 
+}
+
+/* Navigation menu 
+.header-main-nav {
+    height: 100%; 
+    width: fit-content; 
+}
+
+.header-main-nav ul {
+    list-style: none; 
+}
+
+.header-main-nav ul li {
+    display: inline; 
+    float: left; 
+}*/
+
+/* Navigation menu */
+.header-main-nav {
+    display: flex; /* Use flexbox for navigation */
+    align-items: center; /* Center items vertically */
+}
+
+.header-main-nav ul {
+    display: flex; /* Use flexbox */
+    justify-content: space-between; /* Distribute items evenly */
+    padding: 0; /* Reset padding */
+    margin: 0; /* Reset margin */
+    list-style: none; /* Remove list styles */
+}
+
+.header-main-nav ul li {
+    margin: 0 10px; /* Add margin for spacing */
+}
+
+.header-main-nav ul li a {
+    color: #000; 
+    display: block; 
+    font-family: "Roboto", cursive; 
+    font-size: 2.0rem;
+    height: 100%; 
+    line-height: 60px; 
+    padding: 0 10px; 
+    transition: color 0.3s ease; /* Smooth color transition on hover */
+}
+
+.header-main-nav ul li a:hover {
+    color: var(--site-color-01); 
+}
+
+/* Social media icons */
+.header-main-sm {
+    align-items: center; 
+    column-gap: 10px; 
+    display: flex; 
+    height: 100%; 
+    padding-right: 60px; 
+    width: fit-content; 
+}
+
+.header-main-sm-git {
+    background-image: url(/assets/images/Github.png); 
+    background-repeat: no-repeat; 
+    background-size: cover; 
+    height: 20px; 
+    width: 20px; 
+    transition: background-color 0.3s ease; /* Smooth transition on hover */
+}
+
+.header-main-sm-in {
+    background-image: url(/assets/images/linkedin.png);
+    background-repeat: no-repeat; 
+    background-size: cover; 
+    height: 20px; 
+    width: 20px; 
+    transition: background-color 0.3s ease; /* Smooth transition on hover */
+}
+
+.header-main-sm-dis {
+    background-image: url(/assets/images/discord.png); 
+    background-repeat: no-repeat; 
+    background-size: cover; 
+    height: 20px; 
+    width: 20px; 
+    transition: background-color 0.3s ease; /* Smooth transition on hover */
+}
+
+.header-main-sm-git:hover {
+    background-image: url(/assets/images/Github.png); 
+}
+
+.header-main-sm-in:hover {
+    background-image: url(/assets/images/linkedin.png); 
+}
+
+.header-main-sm-dis:hover {
+    background-image: url(/assets/images/discord.png);
+}
+
+.header-main-sm img {
+    height: 20px; 
+    width: 20px; 
+    transition: background-color 0.3s ease; /* Smooth transition on hover */
+}
+
+/* Footer section */
+.footer-main {
+    background-color: #141414; 
+    padding: 60px 0 100px; 
+    width: 100%;
+}
+
+.footer-main-flex {
+    display: flex; 
+    flex-wrap: wrap; 
+    justify-content: center;
+}
+
+/* Footer testimony section */
+.footer-testimony {
+    display: flex; 
+    flex-basis: 20%; 
+    flex-wrap: wrap; 
+    justify-content: center; 
+}
+
+.footer-testimony img {
+    border-radius: 80px;
+ }
+ 
+ .my-images{
+    height: 150px;
+    width: 150px;
+ }
+
+.footer-testimony p {
+    font-size: 1.6rem; 
+    padding: 20px 20px 0; 
+    text-align: center; 
+}
+
+/* Get in touch section */
+.footer-getintouch {
+    border: 2px solid #fff; 
+    font-weight: 600; 
+    margin: 40px 0 60px; 
+    padding: 10px 20px; 
+   /*transition: all ease-in-out 200ms;*/
+    transition: border 200ms ease; /* Smooth border transition */
+}
+
+.footer-getintouch:hover {
+    border: 2px solid var(--site-color-01); 
+}
+
+/* Footer sitemap section */
+.footer-sitemap {
+    display: flex;
+    flex-basis: 100%; 
+}
+
+.footer-sitemap a {
+    line-height: 30px; 
+}
+
+.footer-sitemap a:hover {
+    opacity: 0.8; 
+}
+
+.footer-sitemap ul:nth-child(1) {
+    border-left: 4px solid var(--site-color-01); 
+    padding-left: 20px; 
+}
+
+/* Sitemap columns */
+.footer-sitemap ul:nth-child(1), .footer-sitemap ul:nth-child(2) {
+    flex-basis: 220px;
+}
+
+.footer-sitemap ul:nth-child(3) {
+    flex-basis: 340px; 
+}
+
+.footer-sitemap p {
+    text-transform: uppercase; 
+}
+
+.email p {
+    text-transform: lowercase;
+}
+
+.footer-sitemap ul:nth-child(4) {
+    flex-grow: 1; 
+}
+
+.footer-sitemap ul:nth-child(4) p {
+    text-align: right; 
+}
+
+/* Burger menu and button for mobile */
+.burger-menu, .burger-menu-btn {
+    display: none; 
+}
+
+/* Main container for the contact form */
+.contact-form-main {
+    background-color: #f9f9f9; 
+    border-radius: 8px; 
+    box-shadow: -2px 2px 4px #000; 
+    margin: 30px auto 0; 
+   /* max-width: 100%; */
+    padding: 20px; 
+    width: 100%; 
+}
+
+/* Styles for the form within the contact form container */
+.contact-form-main form {
+    display: flex; 
+    flex-direction: column; 
+}
+
+/* Style for form labels */
+.contact-form-main label {
+    font-size: 1.6rem; 
+    font-weight: bold; 
+    margin-bottom: 5px; 
+}
+
+/* Styles for input fields and textareas */
+.contact-form-main input, .contact-form-main textarea {
+    border-radius: 4px; 
+    border: 1px solid #111; 
+    font-size: 1.6rem; 
+    margin-bottom: 15px; 
+    padding: 10px; 
+    /*width: 100%; */
+}
+
+/* Styles for input fields and textareas when focused */
+.contact-form-main input:focus,
+.contact-form-main textarea:focus {
+    border-color: var(--site-color-01-hover); 
+    outline: none; 
+}
+
+/* Styles for the submit button */
+.contact-form-main button {
+    background-color: var(--site-color-01); 
+    border-radius: 4px; 
+    border: none; 
+    color: white; 
+    cursor: pointer; 
+    font-size: 1.6rem; 
+    padding: 10px 15px; 
+    text-align: center; 
+    /*transition: background-color 0.3s;*/
+    transition: background-color 0.3s ease; /* Smooth background transition */
+}
+
+/* Styles for the button on hover */
+.contact-form-main button:hover {
+    background-color: var(--site-color-01-hover); 
+}
+
+/* MEDIA QUERIES */
+/* MOBILE VERSION */
+@media only screen and (max-width: 600px) {
+    .burger-menu-btn {
+        background-image: url(/assets/Icons/burger-bar.png), url(/assets/Icons/close.png); 
+        background-position: center, center left 50px; 
+        background-repeat: no-repeat;
+        background-size: cover; 
+        display: block; 
+        height: 50px; 
+        margin-left: 10px; 
+        width: 50px; 
+    }
+
+    .burger-menu {
+        background-color: #111; 
+        display: block;
+        display: flex; 
+        height: 100vh; 
+        position: fixed; 
+        width: 100%; 
+        z-index: 900; 
+    }
+
+    .burger-menu ul {
+        align-content: flex-start; 
+        display: flex; 
+        flex-wrap: wrap; 
+        height: calc(100vh - 60px); 
+        width: 100%; 
+    }
+
+    .burger-menu ul li {
+        border-top: 2px solid #000; 
+        flex-basis: 100%; 
+    }
+
+    .burger-menu ul li:last-child {
+        border-bottom: 2px solid #000; 
+    }
+
+    .burger-menu ul li a {
+        display: block; 
+        flex-basis: 100%; 
+        font-size: 3rem; 
+        height: 100%; 
+        padding: 30px 0; 
+        text-align: center; 
+    }
+
+    .wrapper-main {
+        width: calc(100% - 40px); 
+    }
+
+    /* Header logo container */
+    .header-main-logo {
+        padding-left: 20px; 
+    }
+
+    /* Navigation menu */
+    .header-main-nav {
+        display: none; 
+    }
+
+    /* Social media icons */
+    .header-main-sm {
+        padding-right: 20px;
+    }
+
+    /* Footer testimony section */
+    .footer-testimony {
+        display: none; 
+    }
+
+    /* Get in touch section */
+    .footer-getintouch {
+        margin: 0 0 60px; 
+    }
+
+    /* Footer sitemap section */
+    .footer-sitemap {
+        flex-wrap: wrap; 
+    }
+
+    .footer-sitemap ul:nth-child(1) {
+        border-left: none; 
+        padding-left: 0;
+    }
+
+    /* Sitemap columns */
+    .footer-sitemap ul:nth-child(1), .footer-sitemap ul:nth-child(2), .footer-sitemap ul:nth-child(3) {
+        flex-basis: 100%; 
+        padding-bottom: 20px; 
+        text-align: center; 
+    }
+
+    .footer-sitemap p {
+        padding: 0 20px; 
+    }
+
+    .footer-sitemap ul:nth-child(4) p {
+        text-align: center; 
+    }
+
+    .contact-form-main {
+        box-shadow: none; 
+        margin: 0 15px 30px; 
+        padding: 15px; 
+    }
+
+    .contact-form-main label {
+        font-size: 1.4rem; 
+    }
+
+    .contact-form-main input, .contact-form-main textarea {
+        font-size: 1.4rem; 
+    }
+
+    .contact-form-main button {
+        padding: 12px 20px; 
+        font-size: 1.4rem; 
+    }
+}
+
+/* Low Resolution Tablets and iPads */
+@media only screen and (min-width: 481px) and (max-width: 767px) {
+    .burger-menu-btn {
+        background-image: url(/assets/Icons/burger-bar.png), url(/assets/Icons/close.png); 
+        background-position: center, center left 50px; 
+        background-repeat: no-repeat;
+        background-size: cover; 
+        display: block; 
+        height: 50px; 
+        margin-left: 10px; 
+        width: 50px; 
+    }
+
+    .burger-menu {
+        background-color: #111; 
+        display: block;
+        display: flex; 
+        height: 100vh; 
+        position: fixed; 
+        width: 100%; 
+        z-index: 900; 
+    }
+
+    .burger-menu ul {
+        align-content: flex-start; 
+        display: flex; 
+        flex-wrap: wrap; 
+        height: calc(100vh - 60px); 
+        width: 100%; 
+    }
+
+    .burger-menu ul li {
+        border-top: 2px solid #000; 
+        flex-basis: 100%; 
+    }
+
+    .burger-menu ul li:last-child {
+        border-bottom: 2px solid #000; 
+    }
+
+    .burger-menu ul li a {
+        display: block; 
+        flex-basis: 100%; 
+        font-size: 3rem; 
+        height: 100%; 
+        padding: 30px 0; 
+        text-align: center; 
+    }
+
+    .header-main-nav {
+        display: none; 
+    }
+    .header-main-nav ul li a {
+        font-size: 1.6rem;
+        display: flexbox;
+    }
+    .header-main {
+        height: 60px; 
+    }
+
+    .header-main-nav ul li a {
+        font-size: 1.4rem; 
+    }
+
+    .footer-main {
+        padding: 40px 0 80px; 
+    }
+
+    .footer-testimony {
+        display: none; 
+    }
+
+    .contact-form-main {
+        margin: 20px auto; 
+        padding: 15px; 
+    }
+}
+
+/* Tablets in Landscape Mode and Small Laptops */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    .burger-menu-btn {
+        background-image: url(/assets/Icons/burger-bar.png), url(/assets/Icons/close.png); 
+        background-position: center, center left 50px; 
+        background-repeat: no-repeat;
+        background-size: cover; 
+        display: block; 
+        height: 50px; 
+        margin-left: 10px; 
+        width: 50px; 
+    }
+
+    .burger-menu {
+        background-color: #111; 
+        display: block;
+        display: flex; 
+        height: 100vh; 
+        position: fixed; 
+        width: 100%; 
+        z-index: 900; 
+    }
+
+    .burger-menu ul {
+        align-content: flex-start; 
+        display: flex; 
+        flex-wrap: wrap; 
+        height: calc(100vh - 60px); 
+        width: 100%; 
+    }
+
+    .burger-menu ul li {
+        border-top: 2px solid #000; 
+        flex-basis: 100%; 
+    }
+
+    .burger-menu ul li:last-child {
+        border-bottom: 2px solid #000; 
+    }
+
+    .burger-menu ul li a {
+        display: block; 
+        flex-basis: 100%; 
+        font-size: 3rem; 
+        height: 100%; 
+        padding: 30px 0; 
+        text-align: center; 
+    }
+
+    .header-main {
+        height: 70px;
+    }
+
+    .header-main-nav {
+        display: none; 
+    }
+
+    .header-main-nav ul li a {
+        font-size: 1.6rem; 
+    }
+
+    .footer-main {
+        padding: 50px 0 100px; 
+    }
+
+    .footer-testimony {
+        flex-basis: 50%; 
+    }
+
+    .contact-form-main {
+        margin: 30px auto; 
+        padding: 20px; 
+    }
+}
+
+/* Laptops and Desktops */
+@media only screen and (min-width: 1025px) and (max-width: 1280px) {
+    
+    .header-main {
+        height: 80px; 
+    }
+
+    .header-main-nav ul li a {
+        font-size: 1.8rem; 
+    }
+
+    .footer-main {
+        padding: 60px 0 120px; 
+    }
+
+    .footer-testimony {
+        flex-basis: 33.33%; 
+    }
+
+    .contact-form-main {
+        margin: 40px auto; 
+        padding: 25px; 
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+    

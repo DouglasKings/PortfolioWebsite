@@ -1,0 +1,487 @@
+/* Main section styling */
+main {
+    align-items: center; 
+    background-color: #1a253a; 
+    background-image: url(/assets/images/3d-cartoon.png), url(/assets/images/Pic\ 1.jpg); 
+    background-position: bottom left calc(50% + 80px), center;
+    background-repeat: no-repeat; 
+    background-size: 98vh, cover; 
+    column-gap: 220px; 
+    display: flex; 
+    height: calc(100vh - 60px); 
+    justify-content: center; 
+    margin-top: 60px; 
+    width: 100%; 
+    z-index: 100; 
+    transition: background-size 0.5s ease; /* Smooth transition for background size */
+}
+
+/* Styling for h1 inside main-intro */
+main .main-intro h1 {
+    font-size: 9.6rem; 
+    line-height: 1; 
+    margin-bottom: 20px;
+}
+
+/* Styling for paragraphs inside main */
+main p {
+    font-size: 1.8rem; 
+    line-height: 1.75; 
+    max-width: 700px; 
+}
+
+/* Styling for anchor tags inside main */
+main a {
+    background-color: var(--site-color-01); 
+    display: block; 
+    font-size: 1.8rem; 
+    height: 36px; 
+    line-height: 36px; 
+    margin-top: 30px; 
+    padding: 0px 20px; 
+    width: fit-content; 
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+/* Hover effect for anchor tags */
+main a:hover {
+    background-color: var(--site-color-01-hover); 
+}
+
+/* Styling for paragraphs inside main-quotes */
+main .main-quotes p {
+    border-left: 4px solid var(--site-color-01); 
+    margin: 40px 0; 
+    padding-left: 10px; 
+}
+
+/* Margin adjustment for the second paragraph inside main-quotes */
+main .main-quotes p:nth-child(2) {
+    margin-left: 100px; 
+}
+
+/* Padding for main-intro section */
+main .main-intro {    
+    padding-bottom: 8vh; 
+}
+
+/* Padding for main-quotes section */
+main .main-quotes {    
+    padding-bottom: 8vh; 
+}
+
+/* CATEGORY SECTION */
+.index-category {
+    background-color: #fff; 
+    column-gap: 20px; 
+    display: flex; 
+    flex-wrap: wrap; 
+    justify-content: center; 
+    padding: 60px 0; 
+    width: 100%; 
+}
+
+/* Styling for paragraphs inside index-category */
+.index-category p {
+    color: #111; 
+    flex-basis: 100%; 
+    font-size: 2.2rem; 
+    font-weight: 600;
+    padding-bottom: 40px; 
+    text-align: center; 
+    text-transform: uppercase; 
+}
+
+/* Styling for index-category-box items */
+.index-category-box {
+    align-items: center; 
+    background-color: #111; 
+    background-repeat: no-repeat; 
+    background-size: cover; 
+    display: flex; 
+    height: 200px; 
+    justify-content: center; 
+    position: relative; 
+    width: 200px; 
+    transition: transform 0.3s ease; /* Smooth transform transition */
+}
+
+/* Background image for the index-category-box */
+.index-category-box:nth-child(2) {
+    background-image: url(/assets/images/software-engineer.jpg); 
+}
+
+.index-category-box:nth-child(3) {
+    background-image: url(/assets/images/Web.jpg); 
+}
+
+.index-category-box:nth-child(4) {
+    background-image: url(/assets/images/3d-portrait-adorable-cartoon-baby-boy.jpg); 
+}
+
+.index-category-box:nth-child(5) {
+    background-image: url(/assets/images/full-shot-girl-spending-time-outdoors.jpg); 
+}
+
+/* Dark overlay styles */
+.dark-overlay {
+    background-color: #1a253a; 
+    bottom: 0; 
+    left: 0; 
+    opacity: 0.5; 
+    position: absolute; 
+    right: 0; 
+    top: 0; 
+    transition: all ease-in-out 200ms;
+    transition: opacity 200ms ease;  
+}
+
+/* Hover effect for dark overlay */
+.index-category-box:hover .dark-overlay  {
+    opacity: 0; 
+}
+
+/* Styling for h3 inside index-category-box */
+.index-category-box h3 {
+    font-size: 2.2rem; 
+    line-height: 1.5; 
+    text-align: center; 
+    text-shadow: -2px 2px 4px #000; 
+    z-index: 100; 
+}
+
+/* ABOUT SECTION */
+.index-about {
+    background-color: #1a253a;
+    padding: 60px 0; 
+    width: 100%; 
+}
+
+/* Flexbox layout for index-about */
+.index-about-flex {
+    align-items: center; 
+    column-gap: 60px; 
+    display: flex; 
+    justify-content: center; 
+}
+
+/* Styling for images inside index-about-img */
+.index-about-img img {
+    border-radius: 300px; 
+    width: 300px; 
+}
+
+/* Text container inside index-about */
+.index-about-text {
+    flex-basis: 455px; 
+}
+
+/* Paragraphs inside index-about-text */
+.index-about-text p {
+    padding: 20px 0; 
+}
+
+/* Styling for anchor tags inside index-about-text */
+.index-about-text a {
+    background-color: var(--site-color-01); 
+    display: block; 
+    font-size: 1.8rem; 
+    height: 36px; 
+    line-height: 36px; 
+    padding: 0 20px; 
+    width: fit-content; 
+    transition: background-color 0.3s ease; 
+}
+
+/* Hover effect for anchor tags */
+.index-about-text a:hover {
+    background-color: var(--site-color-01-hover); 
+}
+
+/* Styling for skill bars inside index-about-skill */
+.index-about-skill {
+    flex-basis: 350px; 
+}
+
+/* Styling for skill bars */
+.index-about-skill-bar {
+    border: 4px solid #0b0f16; 
+    height: 20px; 
+    width: 100%; 
+}
+
+/* Fill for skill bars */
+.index-about-skill-bar-fill {
+    background-color: var(--site-color-01); 
+    height: 100%; 
+    width: 100%;
+}
+
+/* Skill bar widths for different skills */
+.C-- { width: 40%; } 
+.C { width: 40%; } 
+.JAVA { width: 20%; } 
+.MySQL { width: 80%; } 
+.MySQLSERVER { width: 80%; } 
+.HTMLCSS{ width: 65%; } 
+.ADOBE { width: 50%; } 
+
+/* Portfolio Section Styling */
+.portfolio-section {
+    color: #fff;
+    padding: 60px 0;
+    text-align: center;
+}
+
+.portfolio-section h2 {
+    margin-bottom: 40px;
+}
+
+.portfolio-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.portfolio-item {
+    background-color: #1a253a;
+    border-radius: 10px;
+    overflow: hidden;
+    padding: 20px;
+    width: calc(33.33% - 40px); /* Three items per row with spacing */
+    transition:  transform 0.3s ease;
+}
+
+.portfolio-item:hover {
+    transform: scale(1.05);
+}
+
+.portfolio-item img .portfolio-item video{
+    max-width: 100%;
+    border-radius: 4px;
+}
+
+.portfolio-item h3 {
+    font-size: 1.8rem;
+    margin: 15px 0 10px;
+}
+
+.portfolio-item p {
+    font-size: 1.2rem;
+    margin: 10px 0;
+}
+
+.portfolio-item a {
+    background-color: var(--site-color-01);
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.portfolio-item a:hover {
+    background-color: var(--site-color-01-hover);
+}
+
+.portfolio-item video {
+    width: 100%;
+    height: 200px; /* or your desired fixed height */
+}
+
+/* MEDIA QUERIES */
+/* MOBILE VERSION */
+@media only screen and (max-width: 600px) {
+    main {
+        align-items: flex-end; 
+    }
+
+    main .main-intro {
+        padding-bottom: 8vh; 
+    }
+    
+    main .main-intro h1 {
+       font-size: 5rem; 
+       line-height: 1.25; 
+       text-align: center; 
+    }
+    
+    main p {
+        line-height: 1.25; 
+        padding: 0 20px; 
+        text-align: center; 
+    }
+    
+    main a {
+        margin: 30px auto; 
+    }
+      
+    main .main-quotes {    
+        display: none; 
+    }
+
+    /* CATEGORY SECTION */
+    .index-category {
+        padding: 40px 0 20px; 
+        row-gap: 10px; 
+    }
+    
+    .index-category p {
+        padding-bottom: 20px; 
+    }
+    
+    .index-category-box {
+        height: 160px; 
+        width: 95%; 
+    }   
+    
+  .portfolio-item {
+    width: calc(100% - 40px); /* Single item per row */
+  }
+  
+    /* About section responsiveness */
+    .index-about-flex {
+        flex-direction: column; 
+        align-items: center; 
+    }
+
+    .index-about-img {
+        width: 60%; 
+    }
+
+    .index-about-img img {
+        width: 100%; 
+    }
+
+    .index-about-text {
+        flex-basis: 100%; 
+        text-align: center; 
+    }
+
+    .index-about-text h2 {
+        text-align: center; 
+    }
+
+    .index-about-text p {
+        text-align: center; 
+    }
+
+    .index-about-text a {
+        margin: 0 auto 10px; 
+    }
+
+    .index-about-skill {
+        flex-basis: auto; 
+        text-align: center; 
+    }
+
+    .index-about-skill-bar {
+        width: 80%; 
+    }
+} 
+
+/* Adjustments for larger smartphones or small tablets */
+@media only screen and (min-width: 601px) and (max-width: 767px) {
+     
+    main {
+        align-items: flex-start; 
+    }
+
+    main .main-intro h1 {
+        font-size: 5rem; 
+    }
+
+    main p {
+        font-size: 1.6rem; 
+    }
+
+    .index-category {
+        padding: 40px 0; 
+        row-gap: 15px; 
+    }
+
+    .index-category-box {
+        height: 180px; 
+        width: 90%; 
+    }
+
+    .index-about-flex {
+        flex-wrap: wrap; 
+        row-gap: 20px;
+    }
+
+    .portfolio-item {
+        width: calc(50% - 30px); /* Two items per row with spacing */
+    }
+}
+
+/* Adjustments for tablets or small desktops */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+        
+    main {
+        background-size: 70vh, cover; 
+        column-gap: 150px; 
+    }
+
+    main .main-intro h1 {
+        font-size: 6rem; 
+    }
+
+    main p {
+        font-size: 1.4rem; 
+    }
+
+    .index-category {
+        column-gap: 10px; 
+        padding: 50px 0; 
+    }
+
+    .index-category-box {
+        height: 200px; 
+        width: 200px; 
+    }
+
+    .index-about-flex {
+        column-gap: 20px; 
+    }
+
+    .portfolio-item {
+        width: calc(33.33% - 40px); /* Three items per row with spacing */
+    }
+}
+
+/* Adjustments for tablets or smaller desktop monitors */
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+      
+    main {
+        background-size: 80vh, cover; 
+        column-gap: 180px; 
+    }
+
+    main .main-intro h1 {
+        font-size: 8rem; 
+    }
+
+    main p {
+        font-size: 1.6rem; 
+    }
+
+    .index-category {
+        column-gap: 15px; 
+        padding: 50px 0; 
+    }
+
+    .index-category-box {
+        height: 220px; 
+        width: 220px; 
+    }
+
+    .index-about-flex {
+        column-gap: 40px; 
+    }
+    .portfolio-item {
+        width: calc(33.33% - 40px); /* Four items per row with spacing */
+    }
+}
